@@ -1,0 +1,69 @@
+
+/* 
+    Created on : Apr 21, 2017, 1:43:54 PM
+    Author     : Gustavo Grinsteins
+    Class      : CSE 264
+*/
+
+html {
+    background-color: white;
+    color: Black;
+}
+
+#playBoard{
+    /*positioning of the board*/
+    position: absolute;
+    top: 100px;
+    
+    width: 500px;
+    height: 500px;
+    overflow: scroll;
+}
+
+#title{
+    position: absolute;
+    top: 0px;
+    color: black;
+}
+
+#subject{
+    position: absolute;
+    top: 70px;
+}
+
+#logDiv{
+    position: absolute;
+    left: 520px;
+}
+
+#playBoard{
+    background: black;
+}
+
+.grid td{
+    color: white;
+    font-size: 40px;
+}
+
+#playBoard .grid td:hover{
+    background: aqua;
+    cursor:default;
+}
+
+#leaderBoard{
+    position: absolute;
+    top: 100px;
+    left: 520px;
+}
+
+#submitWord{
+    position: absolute;
+    top: 75px;
+    left: 520px;
+}
+
+.picked{
+    border-style: solid;
+    border-color: red;
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gustavo Grinsteins' Website Calculator</title
+        <!-- add link to my css file onclick="document.getElementById('screen').innerHTML = 'hello'"-->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!-- add script to this html document -->
+         <!-- garantees that the DOM is created  because we wrapped
+         everything in window.onload -->
+    <script type="text/javascript" src="ScriptFile.js"></script>
+    </head>
+    <body>
+        <!--this div will hold everything that the calculator has-->
+        <div id="calculator">
+            <div class="top">
+		<div id="screen">0</div>
+            </div>
+            <div class="keys">
+		<span class = "number">7</span>
+		<span class = "number">8</span>
+		<span class = "number">9</span>
+		<span class="operator">+</span>
+		<span class = "number">4</span>
+		<span class = "number">5</span>
+		<span class = "number">6</span>
+		<span class="operator">-</span>
+		<span class = "number">1</span>
+		<span class = "number">2</span>
+		<span class = "number">3</span>
+		<span class="operator">÷</span>
+		<span class = "number">0</span>
+		<span id ="period">.</span>
+                <span id="push" class="push">Push</span>
+		<span class="operator">x</span>
+            </div>
+            <div class="bottom">
+                <span id="clear">C</span>
+                <span id="plusMinus">+/-</span>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+Gustavo Grinsteins 
+CSE 264
+Spring 2017
+Word Search Game
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        
+        <!-- add style sheet css file -->
+        <link rel="stylesheet" type="text/css" href="MS-styles-gug218.css">
+        
+        <!-- Obtaining the latest jQuery Library from closest CDN-->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        
+        <!-- linking the java script file to this html document-->
+        <script type="text/javascript" src="MS-script-gug218.js" ></script>
+        
+        <!-- Obtaining the latest jQuery Mobile Library from closest CDN-->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />    
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        
+    </head>
+    <body>
+        <div id="title">Welcome to Gustavo's MineSweeper</div>
+        <div id="instructions">Type Instructions here</div>
+        <div id="inputs">
+            User Name: <input type="text" id="name">
+            Board Width: <input type="text" id="width">
+            Board Height: <input type="text" id="height">
+            Mines: <input type="text" id="mines">
+            <button type="button" id ="playButton">Play!</button>
+        </div>
+        actual board
+        <div id="gameBoard"></div>
+        answer board
+        <div id="gameBoard2"></div>
+        timer
+        <div id="timer"></div>
+        <div id="leaderBoard">
+            Leader Board
+            <br>
+            <table>
+                <thead>
+                    <tr><td>Name</td><td>Time</td><td>Table Size</td><td># Mines</td></tr>
+                </thead>
+                <tbody>                        
+                </tbody>
+            </table>
+            <button type="button" id ="deleteBoard">Delete Leader Board</button>
+        </div>
+    </body>
+</html>

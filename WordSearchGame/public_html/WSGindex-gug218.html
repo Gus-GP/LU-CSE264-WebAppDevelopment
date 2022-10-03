@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+Gustavo Grinsteins 
+CSE 264
+Spring 2017
+Word Search Game
+-->
+<html>
+    <head>
+        <title>Gustavo's Word Search Game Client</title>
+        
+        <!-- add style sheet css file -->
+        <link rel="stylesheet" type="text/css" href="WSGstyle-gug218.css">
+        
+        <!-- Obtaining the latest jQuery Library from closest CDN-->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        
+        <!-- Load socket IO here before loading javascript -->
+        <script src="https://cdn.socket.io/socket.io-1.3.4.js"></script>
+        
+        <!-- linking the java script file to this html document-->
+        <script type="text/javascript" src="WSGscript-gug218.js" ></script>
+        
+    </head>
+    <body>
+        <div id="title">
+            <h1>Bienvenido a WordSearch</h1>
+        </div>
+        <div id="subject">
+        </div>
+        <div id="logDiv">
+            Username: <input type="text" id="login">
+            <button type="button" id ="register">Register!</button>
+        </div>
+        <div id="submitWord">
+            <button type="button" id ="register">Submit Word</button>
+        </div>   
+        <div id="playBoard" class="grid">
+        </div>
+        <div id="leaderBoard">
+            Score Board
+            <br>
+            <table>
+                <thead>
+                    <tr><td>Name</td><td>Score</td></tr>
+                </thead>
+                <tbody>                        
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

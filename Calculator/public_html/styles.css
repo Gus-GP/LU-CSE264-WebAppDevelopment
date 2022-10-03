@@ -1,0 +1,101 @@
+
+/* 
+    Created on : Feb 19, 2017
+    Author     : Gustavo Grinsteins
+*/
+
+#calculator {
+	width: 325px;
+	height: 250px;
+        padding-top: 40px;
+        padding-right: 0px;
+        padding-left: 20px;
+        padding-bottom: 60px;
+	background:  #669999;
+}
+
+
+
+
+#screen {
+	height: 40px;
+	width: 250px;
+	position: relative;
+	bottom: 2px;
+        left: 10px;
+        padding-right: 2px;
+	background: grey;
+        border: solid black;
+	/* Numbers on the screen */
+	font-size: 17px;
+	line-height: 40px;
+	color: white;
+	text-align: right;
+	letter-spacing: 1px;
+}
+
+/* The > sign indicates that we will apply this styling 
+rules to all the children of the class with maybe other specifications */
+
+/* Set up with all the keys */
+.keys > span, #clear, #plusMinus {
+        /*makes everything float left*/
+	float: left;
+	position: relative;
+        /*Distance from the top of the parent div */
+	top: 10px;
+        /* this property changes the cursor to a different
+        shape indicating you can click the object*/
+	cursor: pointer;
+	width: 60px;
+	height: 36px;
+	background: blue;
+	border-radius: 15px;
+	margin: 1px 8px 10px 1px;
+	color: red;
+        font-size: 20px;
+	line-height: 36px;
+	text-align: center;
+	
+}
+
+span.operator {
+	background: green;
+        font-weight: bolder;
+        font-size: 30px;
+	color: black;
+}
+
+span.push {
+	background: yellow;
+        font-weight: bolder;
+        font-size: 25px;
+	color: black;
+}
+
+/*Specialize the look of the clear button */
+#clear, #plusMinus {
+        background: red;
+        font-size: 30px;
+        font-weight: bolder;
+	color: black;
+        width: 130px;
+        height: 40px;
+    
+}
+
+
+
+/*Interaction events */
+#clear:hover, #plusMinus:hover,.keys span:hover {
+    background: orange;
+    color: white;
+}
+
+
+
+
+#clear:active, #plusMinus:active, .keys span:active {
+	top: 4px;
+}
+
